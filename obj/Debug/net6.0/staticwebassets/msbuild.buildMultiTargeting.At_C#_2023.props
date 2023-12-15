@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\At_C#_2023.props" />
+</Project>
