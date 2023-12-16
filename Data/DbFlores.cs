@@ -1,4 +1,4 @@
-﻿using At_C__2023.Models;
+using At_C__2023.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System.ComponentModel.DataAnnotations;
@@ -22,13 +22,15 @@ namespace At_C__2023.Data
                     {
                         new Flor()
                         {
-                            
+                            Id = 1,
 
                             Nome = "Margarida",
 
                             Especie = "Alstro-Emeria",
 
-                            Quantidade = 1
+                            Quantidade = 1,
+
+                            Disponivel = "Sim"
                         }
 
                     });
@@ -37,3 +39,4 @@ namespace At_C__2023.Data
         }
     }
 }
+
