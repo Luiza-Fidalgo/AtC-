@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -56,7 +56,7 @@ namespace At_C__2023.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,Especie,Quantidade")] Flor flor)
+        public async Task<IActionResult> Create([Bind("Id,Nome,Especie,Quantidade,Disponivel")] Flor flor)
         {
             if (ModelState.IsValid)
             {
@@ -88,7 +88,7 @@ namespace At_C__2023.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Especie,Quantidade")] Flor flor)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Especie,Quantidade,Disponivel")] Flor flor)
         {
             if (id != flor.Id)
             {
