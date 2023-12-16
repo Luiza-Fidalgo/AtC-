@@ -1,4 +1,4 @@
-﻿@model IEnumerable<At_C__2023.Models.Flor>
+@model IEnumerable<At_C__2023.Models.Flor>
 
 @{
     ViewData["Title"] = "Index";
@@ -21,6 +21,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.Quantidade)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Disponivel)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -35,6 +38,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Quantidade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Disponivel)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
